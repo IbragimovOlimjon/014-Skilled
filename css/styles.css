@@ -328,6 +328,10 @@ img {
     color: var(--color);
 }
 
+.main-content__iteam:hover .main-content-link-list {
+    color: var(--color);
+}
+
 .iteam-list {
     padding: 64px 32px 138px 32px;
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
@@ -361,9 +365,11 @@ img {
     margin-bottom: 52px;
 }
 
-.main-content__box {
-    border-radius: 50%; 
+.main-content-link-list {
+    text-decoration: none;
+    color: var(--color-text);
 }
+
 
 .main-content__img {
     width: 56px;
@@ -403,11 +409,12 @@ img {
     display: flex;
     flex-shrink: 0;
     margin-right: 15px;
+    color: var(--color);
     transition: 0.4s ease;
 }
 
 .footer-header__logo:hover {
-    opacity: 0.6;
+    color: red;
 }
 
 .footer-header__logo:active {
