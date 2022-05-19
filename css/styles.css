@@ -1,0 +1,106 @@
+/* CUSTOM PROPY */
+:root {
+    --color:#ffffff;
+    --color-title:#13183F;
+    --color-text:#83869A;
+    --color-link:linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    --color-list-link:#F74780;
+    --color-footer-link:linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    --header-link-hover:#666CA3;
+    --hero-link-hover:linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    --list-link-hover:rgba(255, 167, 195, 1);
+    --footer-link-hover:linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    --fonts:'Plus Jakarta Sans', 'Arial', sans-serif;
+}
+
+/* FONTS */
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    src:url('../fonts/plus-jakarta-sans-v2-latin-500.woff2') format('woff2'), 
+    url('../fonts/plus-jakarta-sans-v2-latin-500.woff') format('woff'); 
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    src:url('../fonts/plus-jakarta-sans-v2-latin-700.woff2') format('woff2'), 
+    url('../fonts/plus-jakarta-sans-v2-latin-700.woff') format('woff'); 
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    src:url('../fonts/plus-jakarta-sans-v2-latin-800.woff2') format('woff2'), 
+    url('../fonts/plus-jakarta-sans-v2-latin-800.woff') format('woff');
+    font-display: swap;
+}
+/* GLOBAL-STYLE */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: var(--fonts);
+    color: var(--color-text);
+    background-color: var(--color);
+}
+
+*:focus {
+    outline-color: var(--color-link);                             
+    outline-offset: 2px;
+    outline-width: 3px;
+    outline-style: dashed;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+} */
+
+.container {
+    width: 100%;
+    max-width: 1150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
