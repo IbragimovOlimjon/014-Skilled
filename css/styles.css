@@ -414,7 +414,7 @@ img {
 }
 
 .footer-header__logo:hover {
-    color: red;
+    color: var(--color-list-link);
 }
 
 .footer-header__logo:active {
